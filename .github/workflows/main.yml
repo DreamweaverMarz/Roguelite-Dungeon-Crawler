@@ -1,5 +1,7 @@
 name: Build project
 
+permissions: write-all
+
 on:
   push:
     branches:
@@ -7,6 +9,7 @@ on:
   pull_request:
     branches:
       - main
+  
 
 jobs:
     buildForAllSupportedPlatforms:
